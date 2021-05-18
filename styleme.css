@@ -31,7 +31,7 @@ p::first-letter{
     color:rgb(87, 3, 3);
 }
 
-#movieDiv ul li{
+#movieDiv ol li ol{
     list-style: none ;
 }
 #movieDivReverse ol{
