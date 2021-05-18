@@ -26,7 +26,7 @@ a:hover{
 p::first-letter{
     font-size: 150%;
 }
-#title{
+.title{
     font-weight: bold;
     color:rgb(87, 3, 3);
 }
