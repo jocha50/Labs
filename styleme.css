@@ -26,13 +26,19 @@ a:hover{
 p::first-letter{
     font-size: 150%;
 }
-.title{
-    font-weight: bold;
-    color:rgb(87, 3, 3);
-}
 
 #movieDiv ul li{
     list-style: none ;
+}
+#movieDiv b{
+    color:rgb(87, 3, 3); 
+}
+#movieDivReverse b{
+    
+    color:rgb(87, 3, 3);
+}
+#movieDivReverse ul li{
+    list-style: none;
 }
 #movieDivReverse ol{
     display: flex;
