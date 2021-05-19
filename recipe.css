@@ -1,0 +1,90 @@
+body{
+    
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(Images/silverware.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    margin: auto;
+}
+h1,h2{
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+    font-weight: 22pt;
+}
+h2{
+    text-align: left;
+    font-weight: 18pt;
+}
+a{
+    color: #A4A400;
+}
+
+
+
+.hide{
+    visibility: hidden;
+    display: none;
+}
+
+.tbsp{
+    width: fit-content;
+}
+.tsp{
+    width: fit-content;
+}
+.tbsp .hide{
+    margin-left: -30px;
+  
+}
+.tbsp:hover .hide{
+    visibility: visible;
+    display:inline;
+    background-color: gray;
+    color: white;
+}
+.tsp .hide{
+    margin-left: -30px;
+  
+}
+.tsp:hover .hide{
+    visibility: visible;
+    display:inline;
+    background-color: gray;
+    color: white;
+}
+.direction li span{
+    font-weight: bold;
+}
+
+.direction p span{
+    text-decoration: line-through;
+}
+
+.userComments div{
+    background-color: #FFFFA8;
+    font-style: italic;
+    margin: 0 30px;
+
+}
+.bold{
+    font-weight: bold;
+}
+
+ul{
+    list-style-image: url(Images/pie_bullet.png);
+}
+#footer p{
+    text-align: right;
+}
+#accesLinks {
+    text-align: left;
+}
