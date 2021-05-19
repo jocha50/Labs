@@ -29,6 +29,10 @@ a{
 }
 
 
+.ingredients span{
+    text-decoration: underline;
+}
+
 
 .hide{
     visibility: hidden;
