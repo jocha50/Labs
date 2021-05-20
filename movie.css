@@ -1,0 +1,105 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(Images/background.png);
+}
+header{
+    background-image: url(Images/bannerbg.png);
+    background-repeat: repeat-x;
+}
+.bannerImage{
+    margin: 0 20%;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.wholeContent{
+    background-color: rgb(50, 139, 50);
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+    border: 5px gray solid;
+    border-radius: 20px;
+
+}
+
+
+.mainWindow{    
+    background-image: url(Images/background.png);
+    float:left;
+    width: 80%;
+    position: relative;
+}
+.row{
+
+}
+.col
+{
+    margin: 15px;
+    width: 40%;
+    height: 200px;
+    float: left;
+    overflow: auto;
+}
+
+.rating p{
+    font-size: 70px;
+    font-weight: bold;
+    color: red;
+    background-image: url(Images/rbg.png);
+    background-repeat: repeat-x;
+    overflow: auto;
+    margin: -10px 0;
+    
+
+}
+.rating img{
+    float:left;
+}
+
+.sidebar{
+    overflow: auto;
+}
+.sidebar img{
+    border-top-right-radius: 20px;
+}
+.ditails{
+    
+}
+.ditails ul{
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+.bold{
+    font-weight: bold;
+}
+
+.colStyle{
+    border: 2px gray solid;
+    border-radius: 10px;
+    height: auto;
+    padding: 0 5px;
+    overflow: hidden;
+}
+.colStyle img{
+    float: left;
+}
+.critic img{
+    float: left;
+}
+.publication{
+    font-style: italic;
+}
+.pageNumber{
+    text-align: center;
+}
+.validator{
+    position: absolute;
+    right: 0;
+    opacity: 0.5;
+}
+.validator a{
+    display: table-row;
+}
