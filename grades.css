@@ -1,0 +1,31 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+h1{
+    text-align: center;
+}
+form{
+    background-color: rgb(209, 205, 205);
+    border: 2px gray solid;
+    border-radius: 20px;
+    width: fit-content;
+    height: auto;
+    margin: 0 auto;
+
+}
+label, select{
+    display: flex;
+    margin: 15px;
+}
+.entry{
+    width: fit-content;
+    margin-left: 20px;
+}
+input[type=text]{
+    box-sizing: border-box;
+}
+input[type= submit]{
+    background-color: rgb(4, 165, 4);
+    margin: 0 auto;
+}

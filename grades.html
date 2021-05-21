@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grades.css">
+    <title>Retrieve Grades</title>
+</head>
+
+<body>
+    <h1>Retrieve your grade</h1>
+    <form action="http://mumstudents.org/params.php">
+        <label>Student Name: <input type="text" name="studentName" placeholder="Enter your name" required> </label>
+        <label>Student ID: <input type="text" name="studentID" placeholder="Enter your ID" required> </label>
+        <label for="assignment"> choose assignment</label>
+        <select name="assignment" id="assignment">
+            <option value="Assignment1">Assignment 1</option>
+            <option value="Assignment2">Assignment 2</option>
+            <option value="Assignment3">Assignment 3</option>
+            <option value="Assignment4">Assignment 4</option>
+            <option value="Assignment5">Assignment 5</option>
+        </select>
+        <label>Entry</label>
+        <div class="entry">
+            <label><input type="radio" name="entry" value="NovemberEntry"> November Entry</label>
+            <label><input type="radio" name="entry" value="FeburaryEntry"> Feburary Entry</label>
+            <label><input type="radio" name="entry" value="MayEntry"> May Entry</label>
+            <label><input type="radio" name="entry" value="AugustEntry"> August Entry </label>
+        </div>
+        <label> <input type="checkbox" name="confirm" value="valid" required> I confirm that I am not lying and I'm going to see <br>
+            my own grades only!</label>
+        <label><input type="submit" value="submit"></label>
+    </form>
+</body>
+
+</html>
