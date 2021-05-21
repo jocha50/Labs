@@ -32,9 +32,6 @@ h1{
     width: 80%;
     position: relative;
 }
-.row{
-
-}
 .col
 {
     margin: 15px;
@@ -64,9 +61,6 @@ h1{
 }
 .sidebar img{
     border-top-right-radius: 20px;
-}
-.ditails{
-    
 }
 .ditails ul{
     list-style: none;
