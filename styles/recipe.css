@@ -6,7 +6,7 @@ body{
     color: #404040;
     font-size: 11pt;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url(Images/silverware.jpg);
+    background-image: url(../Images/silverware.jpg);
     background-attachment: fixed;
     background-repeat: repeat;
     margin: auto;
@@ -84,7 +84,7 @@ a{
 }
 
 ul{
-    list-style-image: url(Images/pie_bullet.png);
+    list-style-image: url(../Images/pie_bullet.png);
 }
 #footer p{
     text-align: right;
