@@ -1,0 +1,42 @@
+1. What is the difference between the following 2 statements?
+
+		setTimeout(booyah, 2000); // the booyah function will be excuted after 2000ms
+
+		setTimeout(booyah(), 2000); //the booyah function will be excuted right after this line is called.
+
+2. What do the following 2 alerts display (answer without running the code)?
+
+	var myfunc = function(a, x) {
+	 return a * x;
+	};
+	var x = myfunc(2, 3);
+	var y = myfunc;
+	alert(x);   // this will alert the number "6"
+	alert(y(2,3)); // this one will alert the number "6" as well, because the var y is now a function which has the reference of the function " myfunc"
+	
+	
+3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that says “BOOYAH!”
+		setTimeout(booyah1, 2000);
+			function booyah1(){
+				alert("BOOYAH");
+			}
+
+		setTimeout(booyah2(), 2000);
+		
+			function booyah2(){
+				setTimeout(tempFunction,2000);
+			}
+			function tempFunction(){
+				alert("BOOYAH");
+			}
+4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+for using it)?
+
+	-> unobstusive Javascript allows us to separate our website into 3 major parts
+		1st -- HTML or the content of our website
+		2nd -- CSS or the presentation of our website
+		3rd -- Javascript or the behaviour of our website.
+	
+	-> The practical application of Unobtrusive Javascript is to separate each of these parts in a different files so that 
+		it will be easy for debugging and your could will be clean and net as well. However, the main reason for using it is 
+		i think it's because we can easly modify and/or remove the Javascript parts without affecting our static website.
