@@ -40,6 +40,7 @@ function checkBoxChanged() {
         elem.style.fontWeight = "bold";
         elem.style.textDecoration = "underline";
         elem.style.color = "green";
+        document.body.style.backgroundImage = "url(../Images/background.png)";
         /* if(!document.getElementById('sampleText').className){
              document.getElementById('sampleText').className = 'decorateTextArea';
          }*/
@@ -49,6 +50,7 @@ function checkBoxChanged() {
         elem.style.fontWeight = "normal";
         elem.style.textDecoration = "none";
         elem.style.color = "black";
+        document.body.style.backgroundImage = "none";
     }
 }
 
