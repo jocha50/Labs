@@ -4,28 +4,27 @@
 }*/
 
 let timer = null;
-let i=0;
 
 window.onload = function () {
     const decoration = document.getElementById('biggerDecoration');
     decoration.onclick = largerWithTimer;
 }
 
-function largerWithTimer(){
-    if (timer === null){
-        timer = setInterval(largerSize,500);
+function largerWithTimer() {
+    if (timer === null) {
+        timer = setInterval(largerSize, 500);
     }
-    else{
+    else {
         clearInterval(timer);
         timer = null;
     }
 }
 
 function largerSize() {
-    document.getElementById('sampleText').style.fontSize = "24pt";
-    const fsize = parseInt(document.getElementById('sampleText').style.fontSize) + 10 + "pt";
-  //  alert(fsize);
-    //document.getElementById('sampleText').style.fontSize = fsize;
+    const styleSampleText = document.getElementById('sampleText');
+    const fSize = parseInt(getComputedStyle(styleSampleText, null).fontSize) * 72 / 96; //since getComputedStyle.fontsize returns in Px it must be converted to pt by using (1px = 72/96 pt)
+    const updatedFsize = fSize + 2 + "pt";
+    document.getElementById('sampleText').style.fontSize = updatedFsize;
 }
 
 
