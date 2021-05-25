@@ -1,0 +1,40 @@
+body{
+    font-family: sans-serif;
+    font-size: 14pt;
+    background-color: #CCCCFF;
+}
+h1{
+    font-size: 32pt;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+}
+.mainScreen{
+    width: fit-content;
+    margin: 0 auto;
+}
+textarea{
+    width: 90%;
+    height: 400px;
+    margin: 0 5%;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: monospace;
+}
+fieldset{
+    border: 5px black solid;
+    display: inline;
+    vertical-align: top;
+}
+.fieldsets{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.validator{
+    position: absolute;
+    right: 0;
+}
+.validator a{
+    display: table-row;
+}
