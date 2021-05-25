@@ -22,6 +22,7 @@ function stopMethod() {
     document.getElementById('stop').disabled = true;
     document.getElementById('start').disabled = false;
     document.getElementById('animateLists').disabled = false;
+   // document.getElementById('textArea').value = ''; // to restore the textarea to the starting point , that is empty textarea
 
     clearInterval(timer);
     timer = null;
