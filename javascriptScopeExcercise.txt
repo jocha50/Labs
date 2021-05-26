@@ -1,0 +1,116 @@
+1. Determine what this Javascript code will print out (without running it):
+		x = 1;
+		var a = 5;
+		var b = 10;
+		var c = function(a, b, c) {
+						var x = 10;
+						document.write(x);  // 10
+						document.write(a);  // 8
+						var f = function(a, b, c) {
+									b = a;
+									document.write(b);  // 8
+									b = c;
+									var x = 5;
+							}
+						f(a,b,c); //  8 
+						document.write(b); // 9 , looks like 10 though
+			 }
+		c(8,9,10); // 10   8   8   9
+		document.write(b); // 10
+		document.write(x); // 1
+		}
+		
+The output will be -> 
+						10
+						8
+						8
+						9
+						10
+						1
+		
+		
+		
+2. What is the difference between a method and function?
+
+	-> A function is a set of statements ment to do a specific task, it is defined with  keyword 'function' followed by	
+		the a name and an optional arguments.
+	-> A method is a propery of an object that contains a function.
+	
+3. What does 'this' refer to when used in a Java method?
+
+	-> "this" in java refers to the current object in a method or constructor. usually we use "this" key word to 
+		defferenciate between the class attributes and parameters with the same name in the class.
+		
+4. What does 'this' refer to when used in a JavaScript method?
+
+	-> In a method "this" key word refers to the owner of the method.
+	
+5. What does 'this' refer to when used in a JavaScript constructor function?
+
+	-> In a function "this" refers to the global Object.
+	
+6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword 'this'.
+When f is called by x.f( ), what does 'this' refer to?
+	
+	-> 'this' will be refering to x;
+
+7. What is a free variable in JavaScript?
+
+	-> free variable is a variable that is not declared inside the method or as an argument for a method but 
+		we still make use of the variable inside our method. then that is called a free variable.
+		
+8. Create an object that has properties with name = "fred" and major="music" and a property that is a function
+that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal.
+
+
+	-> var obj = {
+			name: 'fred',
+			major= 'music',
+			property: function(a,b){
+				if(a < b){
+					return a;
+				}else if(a > b){
+					return b;
+				}else return {
+					squareOfa: a*a;
+					squaareOfb: b*b;
+				}
+			}
+			};
+				
+9. Write Javascript code for creating three Employee objects using the "new" keyword and a constructor function.
+Employee objects have the following fields: name, salary, position.
+
+	-> function Employee (name,salary,position){
+			this.name = name;
+			this.salary = salary;
+			this.position = position;
+	}
+	
+	var emp1 = new Employee('Jo',120000,'full stack developer');
+	var emp2 = new Employee('Messi',150000,'manager');
+	var emp3 = new Employee('Dere',120000,'full stack developer');
+	
+10. Write a Javascript function that takes any number of input arguments and returns the product of the
+arguments.
+
+	-> function product(){
+		let accum =1;
+		for(let i =0; i< arguments.length; i++){
+			accum *= arguments[i];
+		}
+		return accum;
+	}
+11. Write an arrow function that returns the maximum of its three input arguments.
+
+	-> var max = (a,b,c) =>{
+					  let max = a;
+					  if(b > max){
+						max = b;
+					  }
+					  if(c > max){
+						max = c;
+					  }
+					  return max;
+				}
+		console.log(max(1,2,3)); // 3

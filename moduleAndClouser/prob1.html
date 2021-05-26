@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Module</title>
+</head>
+
+<body>
+    <button onclick="rudyTimer.dMessage();">Click me!</button>
+    <span id="output"></span>
+
+
+
+    <script>
+
+        var rudyTimer = (function () {
+
+           let timer = null; // stores ID of interval timer 
+
+            function rudy() { // called each time the timer goes off
+                document.getElementById("output").innerHTML += "Rudy!";
+            }
+            return {
+                
+            
+                dMessage: function delayMsg2() {
+                    console.log("here3");
+                    if (timer === null) {
+                        timer = setInterval(rudy, 1000);
+                    } else {
+                        clearInterval(timer);
+                        timer = null;
+                    }
+                }
+            }
+
+        })();
+
+    </script>
+</body>
+
+</html>
