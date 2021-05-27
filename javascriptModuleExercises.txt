@@ -327,7 +327,7 @@ public methods setAddress(newAddress) and getAddress( ).
 		promise.then(val => alert(“Success: “ + val))
 		 .catch(e => alert(“Error: “ + e));
 		 
-		The output will be ->   this will alert "Hattori"
+		The output will be ->   this will alert "“Error: Hattori"
 		
 		
 15. What is the output of the following code?
@@ -338,7 +338,7 @@ public methods setAddress(newAddress) and getAddress( ).
 		promise.then(val => alert(“Success: “ + val))
 		 .catch(e => alert(“Error: “ + e));
 		 
-		 The output will be -> this will alert "Hattori"
+		 The output will be -> this will alert "Success: Hattori"
 
 16. What is the output of the following code?
 			function job(state) {
