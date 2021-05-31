@@ -38,5 +38,5 @@ for using it)?
 		3rd -- Javascript or the behaviour of our website.
 	
 	-> The practical application of Unobtrusive Javascript is to separate each of these parts in a different files so that 
-		it will be easy for debugging and your could will be clean and net as well. However, the main reason for using it is 
+		it will be easy for debugging and your code will be clean and neat aswell. However, the main reason for using it is 
 		i think it's because we can easly modify and/or remove the Javascript parts without affecting our static website.
