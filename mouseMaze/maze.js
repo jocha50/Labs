@@ -22,7 +22,7 @@ $(document).ready(() => {
         if (!$('div .boundary').hasClass('youlose') && mouseStillInMaze) {
 
             //alert('You Win the Game!');
-            $('#status').text('You Win the Game!');
+            $('#status').text('You Won the Game!');
         }
         else if (!mouseStillInMaze) {
            // alert("Please walk inside the maze! DON'T CHEAT!");
