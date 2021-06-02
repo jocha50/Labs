@@ -47,18 +47,12 @@ init = function () {
 };
 init();
 
-
-$(document).ready(() => {
-
-    $('#puzzlearea').on('click', 'div', clickMethod());
-    $('#puzzlearea').on({ mouseenter: inFunction, mouseleave: outFunction }, 'div');
-    $('#shufflebutton').click(shuffle);
-    /*
-        $('#puzzlearea div').each(function(i){
-            console.log($(this).css("left"));
-        });*/
-
+$(function() {
+$('#puzzlearea').on('click', 'div', clickMethod);
+$('#puzzlearea').on({ mouseenter: inFunction, mouseleave: outFunction }, 'div');
+$('#shufflebutton').click(shuffle);
 });
+
 
 function inFunction() {
     let divx = $(this)[0].getBoundingClientRect().left;
@@ -85,7 +79,6 @@ function outFunction() {
 
 
 function clickMethod() {
-    return function () {
         let divx = $(this)[0].getBoundingClientRect().left;
         let divy = $(this)[0].getBoundingClientRect().top;
 
@@ -104,14 +97,6 @@ function clickMethod() {
             });
             emptyPlace.setX(x);
             emptyPlace.setY(y);
-
-        }
-
-       
-
-
-
-
     }
 
 }
@@ -119,7 +104,6 @@ function clickMethod() {
 let emptyPlace = (function () {
     let x = 300;
     let y = 300;
-
     return {
         setX: function (val) {
             x = val;
