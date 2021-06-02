@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)http://mumstudents.org/cs472/2021-06-BL/Homework/9puzzle/resources/fifteen.html -->
+<html lang="en">
+<!--
+	CSE 190 M, Homework 7: Fifteen Puzzle
+	You should not modify fifteen.html.  Your JS code should work with an
+	unmodified version of this file.
+	-->
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifteen Puzzle</title>
+
+    <!-- instructor-provided JavaScript files; do not modify 
+    <script src="./Fifteen Puzzle_files/prototype.js.download" type="text/javascript"></script>
+    <script src="./Fifteen Puzzle_files/grading.js.download" type="text/javascript"></script>
+        -->
+    <!-- your files that you will write
+    <script src="./Fifteen Puzzle_files/fifteen.js.download" type="text/javascript"></script>
+    -->
+    <link href="fifteenPuzzle.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>CSE 190 M Fifteen Puzzle</h1>
+
+    <p>
+        The goal of the fifteen puzzle is to un-jumble its fifteen squares
+        by repeatedly making moves that slide squares into the empty space.
+        How quickly can you solve it?
+    </p>
+
+    <div id="puzzlearea">
+        <!-- the following are the actual fifteen puzzle pieces -->
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+        <div id="div5">5</div>
+        <div id="div6">6</div>
+        <div id="div7">7</div>
+        <div id="div8">8</div>
+        <div id="div9">9</div>
+        <div id="div10">10</div>
+        <div id="div11">11</div>
+        <div id="div12">12</div>
+        <div id="div13">13</div>
+        <div id="div14">14</div>
+        <div id="div15">15</div>
+    </div>
+
+    <p id="controls">
+        <button id="shufflebutton">Shuffle</button>
+    </p>
+
+   
+
+    <p>
+        American puzzle author and mathematician Sam Loyd is often falsely
+        credited with creating the puzzle; indeed, Loyd claimed from 1891
+        until his death in 1911 that he invented it.
+        The puzzle was actually created around 1874 by Noyes Palmer Chapman,
+        a postmaster in Canastota, New York.
+    </p>
+
+    <div class="validator">
+        <p>
+            <a href="http://validator.w3.org/check?uri=https://jocha50.github.io/Labs/15Puzzle/fifteenPuzzle.html"
+                rel="nofollow"> <img src="../Images/w3c-html.png" alt="html-validator" /></a>
+
+            <a
+                href="https://jigsaw.w3.org/css-validator/validator?uri=https://jocha50.github.io/Labs/15Puzzle/fifteenPuzzle.css">
+                <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+            </a>
+            <a href="https://jshint.com?uri=https://jocha50.github.io/Labs/15Puzzle/fifteenPuzzle.js">
+                <img src="../Images/jshint-small.png" alt="Valid JS" />
+            </a>
+        </p>
+    </div>
+
+
+    <script src="../scripts/jquery-3.6.0.js"></script>
+    <script src="fifteenPuzzle.js"></script>
+</body>
+
+</html>

@@ -22,7 +22,7 @@ function largerWithTimer() {
 
 function largerSize() {
     const styleSampleText = document.getElementById('sampleText');
-    const fSize = parseInt(getComputedStyle(styleSampleText, null).fontSize) * 72 / 96; //since getComputedStyle.fontsize returns in Px it must be converted to pt by using (1px = 72/96 pt)
+    const fSize = parseInt(getComputedStyle(styleSampleText, null).getPropertyValue(fontSize)) * 72 / 96; //since getComputedStyle.fontsize returns in Px it must be converted to pt by using (1px = 72/96 pt)
     const updatedFsize = fSize + 2 + "pt";
     document.getElementById('sampleText').style.fontSize = updatedFsize;
 }
