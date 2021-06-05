@@ -1,0 +1,12 @@
+input[type="text"]{
+    font-weight: bold;
+    font-size: 18pt;
+}
+label{
+    font-size: 18pt;
+}
+fieldset{
+    width: 500px;
+    margin:0 auto;
+
+}

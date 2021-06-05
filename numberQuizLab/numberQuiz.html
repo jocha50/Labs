@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="numberQuiz.css">
+    <title>Number Quiz Lab</title>
+</head>
+<body>
+    <form action="http://localhost:8080/numberQuiz.js">
+        <fieldset>
+            <legend>The Number Quiz</legend>
+            <label>Your current Score is: </label>
+            <label id="score"></label>
+            <div>
+                <p>Guess the next number in the sequence</p>
+                <p id="sequence"> 3,1,4,1,5 </p>
+            </div>
+            <label> Your Answer is: 
+                <input type="text" name="answer" >    
+            </label>
+            <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <form hidden>
+        <input type= "text" name= "score" value="5" id="hiddenscore">
+        <input type = "text" name= "quizNumber" value="1,2,3,4,5" id= "hiddenQuizNumber">
+    </form>
+
+    
+</body>
+</html>
